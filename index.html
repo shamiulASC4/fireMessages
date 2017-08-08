@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,20 @@
     <!--Go to https://console.firebase.google.com-->
     <!--Sign in and add a project "fireMessage"-->
     <!--PASTE SNIPPET HERE-->
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDyhL7cWwdaq2TZ67_GOPkoq0gkMkYaLHc",
+            authDomain: "ascproject-d483d.firebaseapp.com",
+            databaseURL: "https://ascproject-d483d.firebaseio.com",
+            projectId: "ascproject-d483d",
+            storageBucket: "",
+            messagingSenderId: "647425186484"
+        };
+        firebase.initializeApp(config);
+    </script>
 
 
 
@@ -25,6 +40,7 @@
     <link rel="stylesheet" href="lib/css/style.css">
 
 </head>
+
 <body>
 
     <!--Add your name-->
@@ -32,9 +48,9 @@
 
     <!--Will be populated with messages-->
     <div class="allMessages">
-        
+
     </div>
-    
+
     <!--For user to input messages-->
     <div class="userContainer">
         <form>
@@ -52,4 +68,5 @@
         </form>
     </div>
 </body>
+
 </html>
